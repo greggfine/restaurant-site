@@ -59,7 +59,7 @@ nav {
 	justify-content: center;
 }
 
-.breadcrumb li {
+.breadcrumb li, i {
 	flex-basis: 145px;
 	font-size: 0.8125rem;
 	font-weight: 700;
@@ -70,8 +70,7 @@ nav {
 	background-image: url("../img/unsplash/joanna-boj-17158.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
-	/*position: relative;*/
+	height: 80vh;
 }
 
 .vertical-line {
@@ -100,4 +99,71 @@ nav {
 	background-color: #fff;
 }
 
+.our-story {
+	height: 1080px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+}
+
+.our-story a {
+	text-decoration: none;
+	color: #000;
+	border: 1px solid;
+	padding: 1em 2em;
+	font-weight: 700;
+}
+
+.our-story p {
+	padding-bottom: 40px;
+}
+
+.about-us {
+	color: #000;
+	grid-area: 2/3/6/6;
+	text-align: center;
+}
+
+.restaurant-image1 {
+	grid-area: 7/3/11/6;
+	background-image: url("../img/unsplash/ali-inay-9858.jpg");
+	background-size: cover;
+}
+
+.restaurant-image2 {
+	color: #000;
+	grid-area: 2/7/6/10;
+	background-image: url("../img/unsplash/diego-duarte-cereceda-340520.jpg");
+	background-size: cover;
+}
+
+.hours {
+	grid-area: 7/7/11/10;
+	color: #000;
+	text-align: center;
+}
+
+.menu {
+	height: 100vh;
+}
+
+.menu-image {
+	height: 550px;
+	width: 100%;
+	background-image: url("../img/unsplash/mantra-media-58091.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.menu-image h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 3rem;
+}
 
