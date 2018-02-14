@@ -51,16 +51,23 @@ nav {
 
 .breadcrumb {
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	/*border: 1px solid white;*/
 	height: 100%;
 	margin: 0;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .breadcrumb li, i {
-	flex-basis: 145px;
+	-ms-flex-preferred-size: 145px;
+	    flex-basis: 145px;
 	font-size: 0.8125rem;
 	font-weight: 700;
 }
@@ -82,12 +89,19 @@ nav {
 
 .welcome {
 	color: yellow;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 2rem;
 	background-color: lightgrey;
@@ -102,9 +116,12 @@ nav {
 .our-story {
 	height: 1080px;
 	width: 100%;
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(12, 1fr);
+	-ms-grid-columns: (1fr)[12];
+	    grid-template-columns: repeat(12, 1fr);
+	-ms-grid-rows: (1fr)[12];
+	    grid-template-rows: repeat(12, 1fr);
 }
 
 .our-story a {
@@ -121,11 +138,19 @@ nav {
 
 .about-us {
 	color: #000;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 4;
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 3;
 	grid-area: 2/3/6/6;
 	text-align: center;
 }
 
 .restaurant-image1 {
+	-ms-grid-row: 7;
+	-ms-grid-row-span: 4;
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 3;
 	grid-area: 7/3/11/6;
 	background-image: url("../img/unsplash/ali-inay-9858.jpg");
 	background-size: cover;
@@ -133,12 +158,20 @@ nav {
 
 .restaurant-image2 {
 	color: #000;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 4;
+	-ms-grid-column: 7;
+	-ms-grid-column-span: 3;
 	grid-area: 2/7/6/10;
 	background-image: url("../img/unsplash/diego-duarte-cereceda-340520.jpg");
 	background-size: cover;
 }
 
 .hours {
+	-ms-grid-row: 7;
+	-ms-grid-row-span: 4;
+	-ms-grid-column: 7;
+	-ms-grid-column-span: 3;
 	grid-area: 7/7/11/10;
 	color: #000;
 	text-align: center;
@@ -162,7 +195,9 @@ nav {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	color: #fff;
 	font-size: 3rem;
 }
@@ -170,9 +205,12 @@ nav {
 .menu-grid {
 	width: 75%;
 	margin: 0 auto;
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: repeat(4, 25%);
+	-ms-grid-columns: 50% 50%;
+	    grid-template-columns: 50% 50%;
+	-ms-grid-rows: (25%)[4];
+	    grid-template-rows: repeat(4, 25%);
 	grid-gap: 30px;
 	grid-auto-columns: 300px;
 	padding-top: 55px;
@@ -200,9 +238,12 @@ nav {
 .gallery-items {
 	width: 75%;
 	margin: auto;
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	-ms-grid-columns: (1fr)[3];
+	    grid-template-columns: repeat(3, 1fr);
+	-ms-grid-rows: (1fr)[4];
+	    grid-template-rows: repeat(4, 1fr);
 	grid-gap: 25px;
 }
 
@@ -233,9 +274,12 @@ nav {
 }
 
 .review-grid {
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	-ms-grid-columns: (1fr)[4];
+	    grid-template-columns: repeat(4, 1fr);
+	-ms-grid-rows: (1fr)[2];
+	    grid-template-rows: repeat(2, 1fr);
 	grid-gap: 25px;
 }
 
@@ -265,11 +309,10 @@ footer{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	text-align: center;
 }
-
-
-
 
 
